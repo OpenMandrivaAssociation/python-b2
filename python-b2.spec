@@ -8,6 +8,7 @@ License:	MIT
 Group:		Development/Python
 BuildRequires:	python
 BuildSystem:	python
+BuildRequires:	python3.11dist(pdm-backend)
 BuildArch:	noarch
 
 %description
