@@ -1,5 +1,5 @@
 Name:		python-b2
-Version:	4.3.0
+Version:	4.3.1
 Release:	1
 Source0:	https://files.pythonhosted.org/packages/source/b/b2/b2-%{version}.tar.gz
 Summary:	Command Line Tool for Backblaze B2
