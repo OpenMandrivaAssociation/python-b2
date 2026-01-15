@@ -1,22 +1,22 @@
-diff -up python-b2-4.3.0/PKG-INFO.omv~ python-b2-4.3.0/PKG-INFO
---- python-b2-4.3.0/PKG-INFO.omv~	2025-02-22 19:48:30.636928175 +0100
-+++ python-b2-4.3.0/PKG-INFO	2025-02-22 19:48:44.714441382 +0100
-@@ -24,7 +24,7 @@ Requires-Dist: b2sdk<3,>=2.7.0
- Requires-Dist: docutils>=0.18.1
+diff -up python-b2-4.5.0/PKG-INFO.1~ python-b2-4.5.0/PKG-INFO
+--- python-b2-4.5.0/PKG-INFO.1~	1970-01-01 01:00:00.000000000 +0100
++++ python-b2-4.5.0/PKG-INFO	2026-01-15 16:07:23.847993769 +0100
+@@ -23,7 +23,7 @@ Requires-Dist: arrow<2.0.0,>=1.0.2
+ Requires-Dist: b2sdk<3,>=2.10.2
+ Requires-Dist: docutils<0.22,>=0.18.1
  Requires-Dist: idna~=3.4; platform_system == "Java"
- Requires-Dist: importlib-metadata>=3.3; python_version < "3.8"
 -Requires-Dist: phx-class-registry<5,>=4.0
 +Requires-Dist: phx-class-registry>=4.0
  Requires-Dist: rst2ansi==0.1.5
  Requires-Dist: tabulate==0.9.0
  Requires-Dist: tqdm<5,>=4.65.0
-diff -up python-b2-4.3.0/pyproject.toml.omv~ python-b2-4.3.0/pyproject.toml
---- python-b2-4.3.0/pyproject.toml.omv~	2025-02-22 20:04:18.140212679 +0100
-+++ python-b2-4.3.0/pyproject.toml	2025-02-22 20:04:23.968323849 +0100
-@@ -30,7 +30,7 @@ dependencies = [
-     "docutils>=0.18.1",
+diff -up python-b2-4.5.0/pyproject.toml.1~ python-b2-4.5.0/pyproject.toml
+--- python-b2-4.5.0/pyproject.toml.1~	2026-01-08 20:24:19.151732700 +0100
++++ python-b2-4.5.0/pyproject.toml	2026-01-15 16:07:07.679694120 +0100
+@@ -29,7 +29,7 @@ dependencies = [
+     "b2sdk>=2.10.2,<3",
+     "docutils>=0.18.1,<0.22",
      "idna~=3.4; platform_system == 'Java'",
-     "importlib-metadata>=3.3; python_version < '3.8'",
 -    "phx-class-registry>=4.0,<5",
 +    "phx-class-registry>=4.0",
      "rst2ansi==0.1.5",

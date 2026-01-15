@@ -1,0 +1,24 @@
+diff -up python-b2-4.5.0/PKG-INFO.omv~ python-b2-4.5.0/PKG-INFO
+--- python-b2-4.5.0/PKG-INFO.omv~	2026-01-15 16:09:33.081764921 +0100
++++ python-b2-4.5.0/PKG-INFO	2026-01-15 16:09:37.200984551 +0100
+@@ -21,7 +21,7 @@ Requires-Python: >=3.9
+ Requires-Dist: argcomplete<4,>=3.5.2
+ Requires-Dist: arrow<2.0.0,>=1.0.2
+ Requires-Dist: b2sdk<3,>=2.10.2
+-Requires-Dist: docutils<0.22,>=0.18.1
++Requires-Dist: docutils<0.30,>=0.18.1
+ Requires-Dist: idna~=3.4; platform_system == "Java"
+ Requires-Dist: phx-class-registry>=4.0
+ Requires-Dist: rst2ansi==0.1.5
+diff -up python-b2-4.5.0/pyproject.toml.omv~ python-b2-4.5.0/pyproject.toml
+--- python-b2-4.5.0/pyproject.toml.omv~	2026-01-15 16:09:21.767162245 +0100
++++ python-b2-4.5.0/pyproject.toml	2026-01-15 16:09:27.945398283 +0100
+@@ -27,7 +27,7 @@ dependencies = [
+     "argcomplete>=3.5.2,<4",
+     "arrow>=1.0.2,<2.0.0",
+     "b2sdk>=2.10.2,<3",
+-    "docutils>=0.18.1,<0.22",
++    "docutils>=0.18.1,<0.30",
+     "idna~=3.4; platform_system == 'Java'",
+     "phx-class-registry>=4.0",
+     "rst2ansi==0.1.5",
