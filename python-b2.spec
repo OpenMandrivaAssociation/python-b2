@@ -1,6 +1,6 @@
 Name:		python-b2
 Version:	4.7.1
-Release:	1
+Release:	2
 Source0:	https://files.pythonhosted.org/packages/source/b/b2/b2-%{version}.tar.gz
 Summary:	Command Line Tool for Backblaze B2
 URL:		https://pypi.org/project/b2/
@@ -16,12 +16,8 @@ BuildArch:	noarch
 Provides:	b2 = %{EVRD}
 
 %patchlist
-# b2 meets all the requirements listed at
-# https://class-registry.readthedocs.io/en/latest/upgrading_to_v5.html
-# So let's allow phx-class-registry 5.x
-# dropped (no longer applies): b2-relax-phx-class-registry-dep.patch
-# It also seems to be paranoid about docutils updates
-# dropped (no longer applies): b2-relax-docutils-dep.patch
+# Upstream pins docutils<0.22; cooker has 0.23 and b2 only uses it via rst2ansi
+b2-relax-docutils-dep.patch
 
 %description
 Command Line Tool for Backblaze B2
