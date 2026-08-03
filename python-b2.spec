@@ -1,6 +1,6 @@
 Name:		python-b2
 Version:	4.7.1
-Release:	2
+Release:	3
 Source0:	https://files.pythonhosted.org/packages/source/b/b2/b2-%{version}.tar.gz
 Summary:	Command Line Tool for Backblaze B2
 URL:		https://pypi.org/project/b2/
@@ -16,8 +16,8 @@ BuildArch:	noarch
 Provides:	b2 = %{EVRD}
 
 %patchlist
-# Upstream pins docutils<0.22; cooker has 0.23 and b2 only uses it via rst2ansi
-b2-relax-docutils-dep.patch
+# Upstream pins are tighter than cooker (docutils 0.23, tabulate 0.10)
+b2-relax-deps.patch
 
 %description
 Command Line Tool for Backblaze B2
