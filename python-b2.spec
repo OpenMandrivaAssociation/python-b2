@@ -8,7 +8,8 @@ License:	MIT
 Group:		Development/Python
 BuildRequires:	python
 BuildSystem:	python
-BuildRequires:	python%{pyver}dist(pdm-backend)
+BuildRequires:	python%{pyver}dist(hatchling)
+BuildRequires:	python%{pyver}dist(hatch-vcs)
 BuildArch:	noarch
 # The executable is probably more relevant than the python lib,
 # so people may look for it by that name
